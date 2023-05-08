@@ -1,0 +1,142 @@
+/* COLORS */
+
+/* Primary colors */
+$brightOrange:hsl(31, 77%, 52%);
+$darkCyan:hsl(184, 100%, 22%);
+$veryDarkCyan:hsl(179, 100%, 13%);
+
+/* Neutral colors */
+
+$whiteTr:hsla(0, 0%, 100%, 0.75);
+$lightGray:hsl(0, 0%, 95%);
+
+/* FONTS */
+$fontBig:'Big Shoulders Display', cursive;
+$fontLex:'Lexend Deca', sans-serif;
+
+html{
+box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    margin-top: 0;
+}
+
+p{
+    font-size: 15px;
+    margin-top: 0;
+}
+
+img{
+    display: block;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 330px;
+    background-color: red;
+    color: $lightGray;
+
+    .card__icon, .card__text, .card__title, .learnMore{
+        margin-left: 2.5rem;
+    }
+    .card__icon {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        width: max-content;
+    }
+
+    .card__title{
+        font-family: $fontBig;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+    }
+
+    .card__text{
+        font-family: $fontLex;
+        color: $whiteTr;
+        margin-top:2rem;
+        margin-right: 3.5rem;
+        line-height:1.8;
+    }
+
+    .learnMore{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-family: $fontLex;
+        text-decoration: none;
+        display:inline-block;
+        background-color: $lightGray;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        border-radius: 30px;
+        background-color: $lightGray;
+    }
+}
+.sedans__card{
+    border-radius:5px 5px 0 0;
+    background-color: $brightOrange;
+
+    .learnMore{
+        color: $brightOrange;
+    }
+}
+.suvs__card{
+    border-radius: 0;
+    background-color: $darkCyan;
+
+    .learnMore{
+        color: $darkCyan;
+    }
+}
+.luxury__card{
+    border-radius:0 0 5px 5px;
+    background-color: $veryDarkCyan;
+
+    .learnMore{
+        color: $veryDarkCyan;
+    }
+}
+
+@media (min-width:700px){
+
+    body{
+        height: 100vh;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            max-width: 300px;
+
+            .card__text{
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    .sedans__card{
+        border-radius: 5px 0 0 5px;
+    }
+    .luxury__card{
+        border-radius: 0 5px 5px 0;
+    }
+
+   
+}

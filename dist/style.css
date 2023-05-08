@@ -1,0 +1,121 @@
+/* COLORS */
+/* Primary colors */
+/* Neutral colors */
+/* FONTS */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 330px;
+  background-color: red;
+  color: hsl(0, 0%, 95%);
+}
+.card .card__icon, .card .card__text, .card .card__title, .card .learnMore {
+  margin-left: 2.5rem;
+}
+.card .card__icon {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+.card .card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+.card .card__text {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 2rem;
+  margin-right: 3.5rem;
+  line-height: 1.8;
+}
+.card .learnMore {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.sedans__card {
+  border-radius: 5px 5px 0 0;
+  background-color: hsl(31, 77%, 52%);
+}
+.sedans__card .learnMore {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs__card {
+  border-radius: 0;
+  background-color: hsl(184, 100%, 22%);
+}
+.suvs__card .learnMore {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury__card {
+  border-radius: 0 0 5px 5px;
+  background-color: hsl(179, 100%, 13%);
+}
+.luxury__card .learnMore {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .card {
+    max-width: 300px;
+  }
+  section .card .card__text {
+    margin-bottom: 4rem;
+  }
+  .sedans__card {
+    border-radius: 5px 0 0 5px;
+  }
+  .luxury__card {
+    border-radius: 0 5px 5px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
