@@ -26,12 +26,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the 3-column preview card component coding challenge](./design/Solution.png)
 
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
